@@ -10,4 +10,5 @@ class TestDeck(unittest.TestCase):
     def test_Deck_has_topic(self):
         self.assertEqual("Capitals", self.deck.topic)
 
-    # def test_Deck_has_card_limit(self):
+    def test_Deck_has_card_limit(self):
+        self.assertEqual(15, self.deck.card_limit)
