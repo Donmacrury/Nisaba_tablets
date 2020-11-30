@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div>
+        <p>{{flashcard.answer}}</p>
+        <p>{{flashcard.question}}</p>
+        <p>{{flashcard.deck.topic}}</p>
+        <p><a href="/flashcards/{{flashcard.id}}/edit">Edit</a></p>
+    </div>
+{% endblock %}

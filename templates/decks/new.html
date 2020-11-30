@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/decks" method="POST">
+
+    <div>
+        <label for="topic">Topic: </label>
+        <input type="text"
+               id="topic"
+               name="topic"
+               placeholder="Topic"
+               required
+               autofocus>
+    </div>
+
+    <div>
+        <label for="card_limit">Card Limit: </label>
+        <input type="number"
+               id="card_limit"
+               name="card_limit"
+               placeholder="Card Limit"
+               required>
+    </div>
+
+    <button type="submit">Add Deck</button>
+</form>
+
+{% endblock %}

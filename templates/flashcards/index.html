@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for flashcard in all_flashcards %}
+    <div class="flashcard">
+        <div class="content">
+            <a href="/flashcards/{{flashcard.id}}">{{flashcard.id}}</a>
+            <div class="question">
+                {{flashcard.question}}
+                <p><i>{{flashcard.answer}}</i></p>
+            </div>
+            <div class="buttons">
+                <form action="/flashcards/{{flashcard.id}}/delete" class="delete-form" method="POST">
+                    <button class="trash-button">🗑</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

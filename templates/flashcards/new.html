@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/flashcards" method="POST">
+
+    <div>
+        <label for="answer">Answer: </label>
+        <input type="text" 
+               id="answer"
+               name="answer" 
+               placeholder="Answer" 
+               required 
+               autofocus>
+    </div>
+
+    <div>
+        <label for="Question">Question: </label>
+        <input type="text"
+               id="question"
+               name="question"
+               placeholder="Question"
+               required>
+    </div>
+
+    <div>
+        <label for="deck">Deck: </label>
+        <select name="deck_id" id="deck">
+            {% for deck in all_decks %}
+                <option value="{{ deck.id }}">{{ deck.topic }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button type="submit">Add Flashcard</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for deck in all_decks %}
+    <div class="decks">
+        <div class="content">
+            <a href="/decks/{{deck.id}}">{{deck.topic}}</a>
+            <div class="card_limit">
+                <p>Flashcard limit: {{deck.card_limit}}</p>
+            </div>
+            <div class="buttons">
+                <form action="/decks/{{deck.id}}/delete" class="delete-form" method="POST">
+                    <button class="trash-button">🗑</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

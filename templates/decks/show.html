@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+    <p>{{deck.topic}}</p>
+    <p>{{deck.card_limit}}</p>
+    <p><a href="/decks/{{deck.id}}/edit">Edit</a></p>
+</div>
+{% endblock %}
