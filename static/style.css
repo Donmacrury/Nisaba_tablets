@@ -1,0 +1,14 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: wheat;
+    background-color: rgb(43, 38, 38);
+}
+
+.new-button {
+    font-size: 14px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    border-color: beige;
+    background-color: black;
+}

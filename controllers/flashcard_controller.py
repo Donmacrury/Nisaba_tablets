@@ -49,3 +49,9 @@ def update_flashcard(id):
 def delete_flashcard(id):
     flashcard_repository.delete(id)
     return redirect('/flashcards')
+
+@flashcards_blueprint.route("/flashcards/<id>/answer", methods=['POST'])
+def show_answer(id):
+    deck = deck_repository.select(id)
+    flashcard = flashcard_repository.select(id)
+    return render_template('flashcards/answer.html', flashcard = flashcard, deck = deck)
