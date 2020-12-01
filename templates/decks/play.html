@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Lets Play: {{deck.topic}}</h1>
+
+{% for decks in all_decks %}
+{% endfor %}
+
+{% for flashcard in all_flashcards %}
+    <div class="deck">
+        <div class="content">
+        <p class="question">{{flashcard.question}}</p>
+        </div>
+    </div>
+    <button>Show Answer</button>
+{% endfor %}
+{% endblock %}

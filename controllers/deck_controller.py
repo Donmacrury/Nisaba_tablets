@@ -42,6 +42,13 @@ def update_deck(id):
     deck_repository.update(deck)
     return redirect('decks')
 
+@decks_blueprint.route("/decks/<id>/delete", methods=['POST'])
 def delete_deck(id):
     deck_repository.delete(id)
     return redirect('/decks')
+
+@decks_blueprint.route("/decks/<id>/play", methods=['GET'])
+def play_deck(id):
+    decks = deck_repository.select(id)
+    flashcards = flashcard_repository.select_all()
+    return render_template('decks/play.html', decks = decks, all_flashcards = flashcards)

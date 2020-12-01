@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h1>Flashcards</h1>
+
+    <div class="new-button">
+        <a href="/flashcards/new">New Flashcard</a>
+    </div>
+
 {% for flashcard in all_flashcards %}
     <div class="flashcard">
         <div class="content">

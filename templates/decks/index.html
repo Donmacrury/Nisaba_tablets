@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+<h1>Decks</h1>
+
+    <div class="new-button">
+        <a href="/decks/new">New Deck</a>
+    </div>
+    
 {% for deck in all_decks %}
     <div class="decks">
         <div class="content">
@@ -13,6 +19,10 @@
                     <button class="trash-button">🗑</button>
                 </form>
             </div>
+        </div>
+
+        <div class="play-button">
+            <a href="/decks/{{deck.id}}/play">Play deck</a>
         </div>
     </div>
 {% endfor %}
