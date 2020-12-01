@@ -1,10 +1,9 @@
 body{
-    background: url('/static/images/nisaba_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: wheat;
-    /* background-color: rgb(43, 38, 38); */
+    background-color: rgb(43, 38, 38);
 }
 
 header {
@@ -17,7 +16,7 @@ header>h1 {
     text-align: center;
 }
 
-.menu {
+.menu{
     margin: 20px;
     display: flex;
     padding: 10px;
@@ -25,7 +24,7 @@ header>h1 {
     color: wheat;
 }
 
-.menu li {
+.menu li{
     padding-right: 10px;
     list-style: none;
     font-size: 14px;
@@ -39,7 +38,7 @@ header>h1 {
     color: white;
 }
 
-.new-button {
+.new-button{
     font-size: 14px;
     padding: 5px;
     font-weight: bold;
@@ -48,7 +47,7 @@ header>h1 {
     background-color: black;
 }
 
-.decks {
+.decks{
     border: 1px solid maroon;
     width: 250px;
     padding: 10px;
@@ -58,7 +57,7 @@ header>h1 {
     margin-bottom: 10px;
 }
 
-.flashcard {
+.flashcard{
     border: 1px solid maroon;
     width: 250px;
     padding: 10px;
@@ -66,4 +65,12 @@ header>h1 {
     display: flex;
     line-height: 14px;
     margin-bottom: 10px;
+}
+
+#home-image {
+    width: 100vw;
+    height: 100vh;
+    background: url('/static/images/nisaba_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
