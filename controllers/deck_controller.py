@@ -49,6 +49,5 @@ def delete_deck(id):
 
 @decks_blueprint.route("/decks/<id>/play", methods=['GET'])
 def play_deck(id):
-    decks = deck_repository.select(id)
-    flashcards = flashcard_repository.select_all()
-    return render_template('decks/play.html', decks = decks, all_flashcards = flashcards)
+    deck = deck_repository.select(id)
+    return render_template('decks/play.html', deck = deck)
