@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Our survey says: </h1>
+    <div>
+        <p>{{flashcard.answer}}</p>    
+    </div>
+
+    <div>
+        <a href="/decks/{{deck.id}}/play">
+            <button>Return to deck</button>
+        </a>
+    </div>
+<button>Return to deck</button>
+{% endblock %}

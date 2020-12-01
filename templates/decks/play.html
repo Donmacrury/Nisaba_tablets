@@ -1,16 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<!-- 
-<h1>Lets Play: {{deck.topic}}</h1>
 
-{% for flashcard in all_flashcards %}
-    <div class="flashcards">
-        <div class="content">
-            <p class="question">{{flashcard.question}}</p>
-        </div>
-    </div>
-    <button>Show Answer</button>
-{% endfor %} -->
+
+<!-- TODO: for flashcard in flashcards
+           get flashcard.question
+           get flashcard.answer
+           hide flashcard.asnwer
+           button: show answer
+           onclick reveal flashcard.answer -->
+
 
 <h1>
 Lets play the {{deck.topic}} deck!
@@ -21,7 +19,7 @@ Lets play the {{deck.topic}} deck!
         <div class="question">
             {{flashcard.question}}
         </div>
-        <form action="/flashcards/{{flashcard.answer}}" class="answer" method="POST">
+        <form action="/flashcards/{{flashcard.id}}/answer" class="answer" method="POST">
             <button>Show Answer</button>
         </form>
     </div>
