@@ -16,4 +16,12 @@
 Lets play the {{deck.topic}} deck!
 </h1>
 
+{% for flashcard in flashcards %}
+    <div>
+        <div class="question">
+            {{flashcard.question}}
+        </div>
+    </div>
+{% endfor %}
+
 {% endblock %}
