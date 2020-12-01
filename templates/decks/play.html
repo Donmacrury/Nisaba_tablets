@@ -21,7 +21,9 @@ Lets play the {{deck.topic}} deck!
         <div class="question">
             {{flashcard.question}}
         </div>
-        <button>Show Answer</button>
+        <form action="/flashcards/{{flashcard.answer}}" class="answer" method="POST">
+            <button>Show Answer</button>
+        </form>
     </div>
 {% endfor %}
 
