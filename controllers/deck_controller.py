@@ -40,7 +40,7 @@ def update_deck(id):
     card_limit = request.form['card_limit']
     deck = Deck(topic, card_limit, id)
     deck_repository.update(deck)
-    return redirect('decks')
+    return redirect('/decks')
 
 @decks_blueprint.route("/decks/<id>/delete", methods=['POST'])
 def delete_deck(id):

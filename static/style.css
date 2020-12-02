@@ -12,3 +12,70 @@ body{
     border-color: beige;
     background-color: black;
 }
+
+.nav-menu {
+    display: flex;
+    padding: 10px;
+    background-color: chocolate;
+    color: wheat;
+}
+
+
+.menu{
+    margin: 20px;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(43, 3, 3);
+    color: wheat;
+}
+
+.menu li{
+    padding-right: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+.menu li a:visited{
+    color: white;
+}
+
+.new-button{
+    font-size: 14px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    border-color: beige;
+    background-color: black;
+}
+
+.decks{
+    border: 1px solid maroon;
+    width: 250px;
+    padding: 10px;
+    min-width: 50px;
+    display: flex;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+.flashcard{
+    border: 1px solid maroon;
+    width: 250px;
+    padding: 10px;
+    min-width: 50 px;
+    display: flex;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+#home-image {
+    width: 100vw;
+    height: 100vh;
+    background: url('/static/images/nisaba_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

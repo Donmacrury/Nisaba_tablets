@@ -16,6 +16,12 @@ header>h1 {
     text-align: center;
 }
 
+h1, h2 {
+    margin: 2px;
+    padding: 0px;
+    text-align: center;
+}
+
 .menu{
     margin: 20px;
     display: flex;
