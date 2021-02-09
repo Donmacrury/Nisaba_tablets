@@ -5,12 +5,15 @@ body{
 }
 
 .new-button {
-    font-size: 14px;
+    font-size: 18px;
     padding: 5px;
     font-weight: bold;
-    border-radius: 5px 0 0 5px;
-    border-color: beige;
-    background-color: black;
+    border: 4px;
+    border-radius: 5px;
+    border-color: solid beige;
+    background-color: chocolate;
+    color: wheat;
+    margin: 10px;
 }
 
 .nav-menu {
@@ -43,17 +46,10 @@ body{
     color: white;
 }
 
-.new-button{
-    font-size: 14px;
-    padding: 5px;
-    font-weight: bold;
-    border-radius: 5px 0 0 5px;
-    border-color: beige;
-    background-color: black;
-}
 
 .decks{
-    border: 1px solid maroon;
+    border: 5px solid chocolate;
+    border-radius: 4px;
     width: 250px;
     padding: 10px;
     min-width: 50px;
@@ -63,11 +59,15 @@ body{
 }
 
 .flashcard{
-    border: 1px solid maroon;
+    border: 5px solid chocolate;
+    border-radius: 4px;
     width: 250px;
     padding: 10px;
     min-width: 50 px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 24%;
     line-height: 14px;
     margin-bottom: 10px;
 }
